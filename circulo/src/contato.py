@@ -1,5 +1,4 @@
-from circulo.cliente.contato_base import ContatoBase
-
+from contato_base import ContatoBase
 
 class Contato(ContatoBase):
 
@@ -11,11 +10,12 @@ class Contato(ContatoBase):
 
     def setId(self, id:str):
         self.id = id
-        return self.id
+
+    def getEmail(self):
+        return self.email
 
     def setEmail(self, email:str):
         self.email = email
-        return self.email
 
     def __eq__(self, other):
         return self.id == other.id and self.email == other.email

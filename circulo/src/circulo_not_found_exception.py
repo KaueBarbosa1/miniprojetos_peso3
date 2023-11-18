@@ -1,4 +1,4 @@
-from circulo.cliente.exception_base import ExceptionBase
+from exception_base import ExceptionBase
 
 class CirculoNotFoundException(ExceptionBase):
     def __init__(self, circuloId: str, message="Circulo não encontrado"):
