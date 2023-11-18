@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class CirculoBase(ABC):
 
     def __init__(self, id: str, limite: int):
